@@ -4,11 +4,18 @@ import { classNames } from 'shared/lib/classNames/classNames'
 import { AppRouter } from 'app/providers/routers'
 import { Navbar } from 'widgets/NavBar'
 import { Sidebar } from 'widgets/Sidebar'
-import { type FC, Suspense, useState } from 'react'
+import { type FC, Suspense, useEffect, useState } from 'react'
 import { Modal } from '../shared/ui/Modal/Modal'
+import { useDispatch } from 'react-redux'
+import { userActions } from '../entities/User'
 
 const App: FC = () => {
     const { theme } = useTheme()
+    const dispatch = useDispatch()
+
+    useEffect(() => {
+        dispatch(userActions.initAuthData())
+    }, [dispatch])
 
     return (
         <div className={classNames('app', { hovered: true, selected: false }, [theme!])}>
