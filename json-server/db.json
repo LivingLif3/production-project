@@ -7,6 +7,13 @@
     }
   ],
   "profile": {
-    "name": "typicode"
+    "first": "Саша",
+    "lastname": "Летко",
+    "age": 19,
+    "currency": "BYN",
+    "country": "Belarus",
+    "city": "Minsk",
+    "username": "admin",
+    "avatar": "https://krasivosti.pro/uploads/posts/2022-08/thumbs/1660813286_1-krasivosti-pro-p-kot-v-ushanke-sssr-krasivo-foto-1.jpg"
   }
 }
