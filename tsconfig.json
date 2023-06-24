@@ -9,6 +9,7 @@
       "moduleResolution": "node",
       "baseUrl": ".",
       "strictNullChecks": true,
+      "strict": true,
       "paths": {
         "*": ["./src/*"]
       },
