@@ -2,33 +2,16 @@ import { type buildOptions } from './types/config'
 import MiniCssExtractPlugin from 'mini-css-extract-plugin'
 import type webpack from 'webpack'
 import { buildCssLoader } from './loaders/buildCssLoader'
-export function buildLoaders ({ isDev }: buildOptions): webpack.RuleSetRule[] {
+import { buildBabelLoader } from './loaders/buildBabelLoader'
+export function buildLoaders (options: buildOptions): webpack.RuleSetRule[] {
+    const { isDev } = options
+
     const svgLoader = {
         test: /\.svg$/,
         use: ['@svgr/webpack']
     }
 
-    const babelLoader = {
-        test: /\.(js|jsx|tsx)$/,
-        exclude: /node_modules/,
-        use: {
-            loader: 'babel-loader',
-            options: {
-                presets: [
-                    ['@babel/preset-env', { targets: "defaults" }]
-                ],
-                plugins: [
-                    [
-                        "i18next-extract",
-                        {
-                            locales: ['ru', 'en'],
-                            keyAsDefaultValue: true
-                        }
-                    ]
-                ]
-            }
-        }
-    }
+    const babelLoader = buildBabelLoader(options)
 
     const cssLoader = buildCssLoader(isDev)
 
