@@ -1,6 +1,8 @@
-export {BuildOptions} from "../types/config"
+import { buildOptions } from '../types/config'
 
-export function buildBabelLoader(options: BuildOptions) {
+export { buildOptions } from '../types/config'
+
+export function buildBabelLoader (options: buildOptions) {
     return {
         test: /\.(js|jsx|tsx)$/,
         exclude: /node_modules/,
@@ -8,11 +10,11 @@ export function buildBabelLoader(options: BuildOptions) {
             loader: 'babel-loader',
             options: {
                 presets: [
-                    ['@babel/preset-env', { targets: "defaults" }]
+                    ['@babel/preset-env', { targets: 'defaults' }]
                 ],
                 plugins: [
                     [
-                        "i18next-extract",
+                        'i18next-extract',
                         {
                             locales: ['ru', 'en'],
                             keyAsDefaultValue: true

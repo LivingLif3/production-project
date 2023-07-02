@@ -6,12 +6,13 @@ import { Navbar } from 'widgets/NavBar'
 import { Sidebar } from 'widgets/Sidebar'
 import { type FC, Suspense, useEffect, useState } from 'react'
 import { Modal } from '../shared/ui/Modal/Modal'
-import { useDispatch } from 'react-redux'
-import { userActions } from '../entities/User'
+import { useDispatch, useSelector } from 'react-redux'
+import { getUserInited, userActions } from '../entities/User'
 
 const App: FC = () => {
     const { theme } = useTheme()
     const dispatch = useDispatch()
+    const inited = useSelector(getUserInited)
 
     useEffect(() => {
         dispatch(userActions.initAuthData())
@@ -23,7 +24,7 @@ const App: FC = () => {
                 <Navbar />
                 <div className={'content-page'}>
                     <Sidebar />
-                    <AppRouter />
+                    {inited && <AppRouter />}
                 </div>
             </Suspense>
         </div>
