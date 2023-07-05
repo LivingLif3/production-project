@@ -3,12 +3,16 @@
     {
       "id": "1",
       "username": "admin",
-      "password": "123321123"
+      "password": "123321123",
+      "role": "ADMIN",
+      "avatar": "https://krasivosti.pro/uploads/posts/2022-08/thumbs/1660813286_1-krasivosti-pro-p-kot-v-ushanke-sssr-krasivo-foto-1.jpg"
     },
     {
       "id": "2",
       "username": "user",
-      "password": "123321123"
+      "password": "123321123",
+      "role": "USER",
+      "avatar": "https://krasivosti.pro/uploads/posts/2022-08/thumbs/1660813286_1-krasivosti-pro-p-kot-v-ushanke-sssr-krasivo-foto-1.jpg"
     }
   ],
   "articles": [
