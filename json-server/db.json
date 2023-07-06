@@ -9,10 +9,10 @@
     },
     {
       "id": "2",
-      "username": "user",
+      "username": "dart vader",
       "password": "123321123",
       "role": "USER",
-      "avatar": "https://krasivosti.pro/uploads/posts/2022-08/thumbs/1660813286_1-krasivosti-pro-p-kot-v-ushanke-sssr-krasivo-foto-1.jpg"
+      "avatar": "https://www.livekuban.ru/sites/default/files/styles/news/public/node/news/main-image/2020-11/d5db8e92_shutterstock_239338216.xxxlarge_2x.jpg?itok=G1TD63Fa"
     }
   ],
   "articles": [
@@ -23,7 +23,9 @@
       "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/800px-Unofficial_JavaScript_logo_2.svg.png",
       "views": 1022,
       "createdAt": "02.07.2023",
-      "type": ["IT"],
+      "type": [
+        "IT"
+      ],
       "blocks": [
         {
           "id": "1",
@@ -75,16 +77,48 @@
       "text": "Круто, спасибо!",
       "articleId": "1",
       "userId": "1"
+    },
+    {
+      "articleId": "1",
+      "userId": "1",
+      "text": "dsadada",
+      "id": "yUbdTOC"
+    },
+    {
+      "articleId": "1",
+      "userId": "1",
+      "text": "привет мир",
+      "id": "6hK_al1"
+    },
+    {
+      "articleId": "1",
+      "userId": "2",
+      "text": "dsada",
+      "id": "rXnxMBb"
     }
   ],
-  "profile": {
-    "first": "Саша",
-    "lastname": "Летко",
-    "age": 19,
-    "currency": "BYN",
-    "country": "Belarus",
-    "city": "Minsk",
-    "username": "admin",
-    "avatar": "https://krasivosti.pro/uploads/posts/2022-08/thumbs/1660813286_1-krasivosti-pro-p-kot-v-ushanke-sssr-krasivo-foto-1.jpg"
-  }
+  "profile": [
+    {
+      "id": "1",
+      "first": "Саша",
+      "lastname": "Летко",
+      "age": 19,
+      "currency": "BYN",
+      "country": "Belarus",
+      "city": "Minsk",
+      "username": "admin",
+      "avatar": "https://krasivosti.pro/uploads/posts/2022-08/thumbs/1660813286_1-krasivosti-pro-p-kot-v-ushanke-sssr-krasivo-foto-1.jpg"
+    },
+    {
+      "id": "2",
+      "first": "Никита",
+      "lastname": "Летко",
+      "age": 19,
+      "currency": "USD",
+      "country": "TATUIN",
+      "city": "GRODNO",
+      "username": "dart vader",
+      "avatar": "https://www.livekuban.ru/sites/default/files/styles/news/public/node/news/main-image/2020-11/d5db8e92_shutterstock_239338216.xxxlarge_2x.jpg?itok=G1TD63Fa"
+    }
+  ]
 }

@@ -5,6 +5,7 @@ import { Currency } from 'entities/Currency'
 import { ValidateProfileError } from 'entities/Profile'
 
 const data = {
+    id: "1",
     username: 'admin',
     age: 22,
     country: Country.Belarus,
@@ -45,7 +46,7 @@ describe('updateProfileData.test', () => {
         ])
     })
 
-    test('vakidate error', async () => {
+    test('validate error', async () => {
         const thunk = new TestAsyncThunk(updateProfileData, {
             profile: {
                 form: { ...data, lastname: '' }
